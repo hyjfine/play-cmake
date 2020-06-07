@@ -6,8 +6,8 @@
  add_library(helloworld_lib_static STATIC ${c_files})
  
  #将动态库和静态库的名字设置为一致
- set_target_properties(helloworld_lib_shared PROPERTIES OUTPUT_NAME "helloworld")
- set_target_properties(helloworld_lib_static PROPERTIES OUTPUT_NAME "helloworld")
+ #set_target_properties(helloworld_lib_shared PROPERTIES OUTPUT_NAME "helloworld")
+#  set_target_properties(helloworld_lib_static PROPERTIES OUTPUT_NAME "helloworld")
  
  #设置动态库版本
  set_target_properties(helloworld_lib_shared PROPERTIES VERSION 1.2 SOVERSION 1)
